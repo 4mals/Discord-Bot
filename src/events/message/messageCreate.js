@@ -237,7 +237,7 @@ module.exports = async (client, message) => {
             'Authorization': 'Bearer ' + process.env.OPENAI,
           },
           body: JSON.stringify({
-            'model': 'gpt-3.5-turbo',
+            'model': 'gpt-3.5-turbo-16k-0613',
             'messages': [{
               'role': 'user',
               'content': message.content
